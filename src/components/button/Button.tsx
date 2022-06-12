@@ -1,4 +1,5 @@
 import React from "react";
+import "./test.css";
 
 export interface ButtonProps {
   label: string;
@@ -6,7 +7,7 @@ export interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  return <button disabled={props.disabled}>{props.label}</button>;
+  return <button className="test" disabled={props.disabled}>{props.label}</button>;
 };
 
 export default Button;

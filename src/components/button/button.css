@@ -1,0 +1,84 @@
+.button {
+  width: auto !important;
+  min-width: 70px;
+  min-height: 35px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0px #d9d9d9;
+  font-weight: 400;
+  transition: 0.3s;
+  color: white;
+  max-font-size: 22px !important;
+}
+
+.button:disabled {
+  pointer-events: none;
+  background-color: #f6f6f6;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.default-button-primary {
+  color: #151515;
+  background-color: #ffd43e;
+}
+
+.submit-button-primary {
+  background-color: #1ea7fd;
+}
+
+.delete-button-primary {
+  background-color: #c90000;
+}
+
+.close-button-primary {
+  background-color: #034b65;
+}
+
+.edit-button-primary {
+  background-color: #77d504;
+}
+
+.default-button-primary:hover {
+  color: #ffd43e;
+  background-color: #151515;
+}
+
+.submit-button-primary:hover {
+  background-color: #0986d5;
+}
+
+.delete-button-primary:hover {
+  background-color: #a40303;
+}
+
+.close-button-primary:hover {
+  background-color: #002431;
+}
+
+.edit-button-primary:hover {
+  background-color: #589b05;
+}
+
+.default-button-small {
+  min-width: 8% !important;
+  padding: 10px 15px;
+}
+
+.default-button-medium {
+  min-width: 25% !important;
+  padding: 10px 100px;
+}
+
+.default-button-large {
+  width: 50% !important;
+  padding: 10px 100px;
+}
+
+.default-button-full-width {
+  width: 100% !important;
+  padding: 10px 100px;
+}

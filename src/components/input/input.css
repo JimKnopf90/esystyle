@@ -1,0 +1,15 @@
+.efy-input {
+    min-height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px transparent;
+}
+
+.efy-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 0px #ffd43e;
+}
+
+.efy-input:disabled {
+    background-color: #F6F6F6FF;
+}

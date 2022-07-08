@@ -35,5 +35,5 @@ Disabled.args = {
 
 export const ReadOnly = Template.bind({});
 ReadOnly.args = {
-    readonly: true
+    readonly: true,
 }

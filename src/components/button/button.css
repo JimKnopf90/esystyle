@@ -5,7 +5,6 @@
   border: none;
   font-size: 16px;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 0px #d9d9d9;
   font-weight: 400;
   transition: 0.3s;
   color: white;
@@ -19,6 +18,18 @@
 
 .button:hover {
   cursor: pointer;
+}
+
+.login-button-primary {
+  color: #151515;
+  background-color: #ffd43e;
+  font-weight: bold;
+}
+
+.logout-button-primary {
+  color: white;
+  background-color: #e70f0f;
+  font-weight: bold;
 }
 
 .default-button-primary {
@@ -40,6 +51,16 @@
 
 .edit-button-primary {
   background-color: #77d504;
+}
+
+.login-button-primary:hover {
+  color: white;
+  background-color: #d3ae2a;
+  box-shadow: white;
+}
+
+.logout-button-primary:hover {
+  background-color: #c90000;
 }
 
 .default-button-primary:hover {

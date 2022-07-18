@@ -8,7 +8,7 @@ export interface ButtonProps {
     color?: string;
     backgroundColor?: string;
     buttonSize: 'small' | 'medium' | 'large' | 'full-width'
-    buttonFunction: 'default' | 'submit' | 'delete' | 'close' | 'edit';
+    buttonFunction: 'default' | 'submit' | 'delete' | 'close' | 'edit' | 'login';
     onClick?: () => string;
 }
 

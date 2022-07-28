@@ -3,24 +3,24 @@ import "./button.css";
 
 export interface ButtonProps {
     variant?: 'primary' | 'secondary';
-    label: string;
     disabled?: boolean;
     color?: string;
     backgroundColor?: string;
     buttonSize: 'small' | 'medium' | 'large' | 'full-width'
     buttonFunction: 'default' | 'submit' | 'delete' | 'close' | 'edit' | 'login';
     onClick?: () => string;
+    children: string;
 }
 
 const Button = ({
     variant = 'primary',
     disabled,
     backgroundColor,
-    label,
     color,
     buttonFunction = 'default',
     buttonSize = 'small',
     onClick,
+    children,
     ...props
 } : ButtonProps) => {
 
@@ -39,7 +39,7 @@ const Button = ({
           }}
           {...props}
       >
-          {label}
+          {children}
       </button>);
 };
 

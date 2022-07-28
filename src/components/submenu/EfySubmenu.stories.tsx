@@ -35,8 +35,10 @@ Standard.args = {
 
 export const SubmenuMenu = Template.bind({});
 SubmenuMenu.args = {
+
     submenues: [
-        {name: "Home", linkTo: "", altIcon: "", srcIcon: homeIcon, submenuesMenu: [
+        {name: "Home", linkTo: "", altIcon: "", srcIcon: homeIcon,
+            submenuesMenu: [
                 {name: "Menu #1", linkTo: "#"},
                 {name: "Menu #2", linkTo: "#"},
                 {name: "Menu #3", linkTo: "#"},

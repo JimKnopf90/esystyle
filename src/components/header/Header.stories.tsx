@@ -32,8 +32,17 @@ LoggedInWithSubmenu.args = {
         name: "Juergen Kanndas",
         token: "dsadasdsadasdk"
     }, submenu: [
-        {name: "Home", linkTo: "#", altIcon: "home icon", srcIcon: homeIcon},
-        {name: "Versandeinstellung", linkTo: "#", altIcon: "vesanddienstleister icon", srcIcon: versanddienstleisterIcon},
+        {name: "Home", linkTo: "#", altIcon: "home icon", srcIcon: homeIcon },
+        {name: "Versandeinstellung", linkTo: "#", altIcon: "vesanddienstleister icon", srcIcon: versanddienstleisterIcon,
+            submenuesMenu: [
+                {name: "Menu #1", linkTo: "#"},
+                {name: "Menu #2", linkTo: "#"},
+                {name: "Menu #3", linkTo: "#"},
+                {name: "Menu #4", linkTo: "#"},
+                {name: "Menu #5", linkTo: "#"},
+                {name: "Menu #6", linkTo: "#"},
+                {name: "Menu #7", linkTo: "#"},
+            ]},
         {name: "Kundenversand", linkTo: "#", altIcon: "kundenversand icon", srcIcon: KundenversandIco},
         {name: "Verkaufskanäle", linkTo: "#", altIcon: "verkaufskanaele icon", srcIcon: verkaufskanaeleIcon},
         {name: "Reprice", linkTo: "#", altIcon: "reprice icon", srcIcon: repriceIcon},

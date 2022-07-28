@@ -5,7 +5,6 @@ import mainlogo from  '../assets/esyfy_logo_white.png';
 import {Button, EfySubmenu} from "../index";
 // @ts-ignore
 import placeholderIcon from "../assets/dashboards.png";
-import EfySidebar from "../sidebar";
 // @ts-ignore
 import esycalcLogo from "../assets/esyCalcWhite.png";
 // @ts-ignore
@@ -21,6 +20,8 @@ import repriceIcon from "../assets/Reprice.png";
 // @ts-ignore
 import synchroIcon from "../assets/Synchro.png";
 import {EfySubmenuProps} from "../submenu/EfySubmenu";
+import EfyModal from "../modal";
+import EfyParagraph from "../modal/EfyParagraph";
 
 type User = {
     name: string;
@@ -35,6 +36,8 @@ export interface HeaderProps {
 const Header = ({
     user, submenu
 } : HeaderProps) => {
+    // @ts-ignore
+    // @ts-ignore
     return (
         <>
             <div className={"esyfy-header"}>
@@ -64,7 +67,9 @@ const Header = ({
                                     <a href={"/"}>Registrieren</a>
                                 </li>
                                 <li className={"btn-login"}>
-                                    <Button label={"Einloggen"} buttonSize={"small"} buttonFunction={"login"} />
+                                    <Button  buttonSize={"small"} buttonFunction={"login"}>
+                                        Login
+                                    </Button>
                                 </li>
                             </ul>
                         </>
@@ -77,6 +82,11 @@ const Header = ({
                     <EfySubmenu submenues={submenu}/>
                 </>
             ) : (<></>)}
+            <EfyModal >
+
+                <p>text</p>
+
+            </EfyModal>
         </>
 
 )

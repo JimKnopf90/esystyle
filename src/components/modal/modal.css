@@ -1,0 +1,66 @@
+.efy-modal {
+    --gap: 15px;
+
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(21, 21, 21, 0.6);
+}
+
+.efy-modal-inner {
+    background: #fff;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.efy-modal-header {
+    display: flex;
+    align-items: center;
+    background: #eeeeee;
+}
+
+.efy-modal-btnClose {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--gap);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.efy-modal-title {
+    flex-grow: 1;
+    padding: 0 var(--gap);
+    font-size: 20px;
+}
+
+.efy-modal-closeIcon {
+    height: 2vh;
+    padding: 5px;
+    border-radius: 100%;
+    transition: all ease 0.3s;
+}
+
+.efy-modal-btnClose:hover .efy-modal-closeIcon {
+    background: #ffd43e;
+}
+
+.efy-modal-content {
+    padding: 0 var(--gap);
+    line-height: 2;
+}
+
+.efy-modal-bottom {
+    text-align: right;
+    padding: 0 var(--gap) var(--gap) var(--gap);
+}
